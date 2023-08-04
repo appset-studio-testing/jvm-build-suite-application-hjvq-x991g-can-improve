@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-ojlc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/ysubrama_org/jvm-build-oosl-tenant/jvm-build-suite-application-hjvq/jvm-build-suite-component-ojlc@sha256:cfbfab1e142dcbe023e836fdef79ade7904ba66604109c45604081829ae37095
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
